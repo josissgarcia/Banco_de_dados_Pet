@@ -1,0 +1,36 @@
+TABELA x OCORRÊNCIA
+
+TABELA CLIENTE_PET: 
+Alteração com o comando ALTER e DROP, removendo a chave estrangeira FK_CLIENTE_PET_CLIENTE.
+Alteração com o comando ALTER e DROP, removendo a chave estrangeira FK_CLIENTE_PET_PET.
+Alteração com o comando ALTER e ADD, adicionando as chaves estrangeiras FK_CLIENTE_PET_CLIENTE FOREIGN KEY (ID_CLIENTE) REFERENCES DBO.CLIENTE (ID) e FK_CLIENTE_PET_PET FOREIGN KEY (ID_PET) REFERENCES DBO.PET (ID).
+
+TABELA PET: 
+Alteração com o comando ALTER e DROP, removendo a chave estrangeira FK_PET_PRONTUARIO.
+Alteração com o comando ALTER e ADD, adicionando a chave estrangeira FK_PET_PRONTUARIO FOREIGN KEY(ID_PRONTUARIO) REFERENCES DBO.PRONTUARIO (ID
+
+TABELA VENDA: 
+Alteração com o comando ALTER e DROP, removendo a chave estrangeira FK_VENDA_CLIENTE.
+Alteração com o comando ALTER e DROP, removendo a chave estrangeira FK_VENDA_FORMA_PAGAMENTO.
+Alteração com o comando ALTER e DROP, removendo a chave estrangeira FK_VENDA_FUNCIONARIO.
+Alteração com o comando ALTER e ADD, adicionando as chaves estrangeiras FK_VENDA_FORMA_PAGAMENTO FOREIGN KEY(ID_FORMA_PAGAMENTO) REFERENCES DBO.FORMA_PAGAMENTO (ID), FK_VENDA_CLIENTE FOREIGN KEY (ID_CLIENTE) REFERENCES DBO.CLIENTE (ID) e FK_VENDA_FUNCIONARIO FOREIGN KEY (ID_FUNCIONARIO) REFERENCES DBO.FUNCIONARIO (ID).
+
+TABELA PRODUTO_VENDA: 
+Alteração com o comando ALTER e DROP, removendo a chave estrangeira FK_PRODUTO_VENDA_VENDA.
+Alteração com o comando ALTER e DROP, removendo a chave estrangeira FK_PRODUTO_VENDA_PRODUTO.
+Alteração com o comando ALTER e ADD, adicionando as chaves estrangeiras FK_PRODUTO_VENDA_PRODUTO FOREIGN KEY (ID_PRODUTO) REFERENCES DBO.PRODUTO (ID), FK_PRODUTO_VENDA_VENDA FOREIGN KEY (ID_VENDA) REFERENCES DBO.VENDA (ID).
+
+TABELA FUNCIONARIO: 
+Alteração com o comando ALTER, para alterar a coluna CPF VARCHAR(14).
+
+
+
+	
+	
+	
+	
+	
+	
+	
+
+
